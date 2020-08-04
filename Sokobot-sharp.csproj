@@ -6,4 +6,8 @@
     <RootNamespace>Sokobot_sharp</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="sisbase" Version="2.0.0-alpha-3" />
+  </ItemGroup>
+
 </Project>
