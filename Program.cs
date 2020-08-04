@@ -1,12 +1,15 @@
 ﻿using System;
-
+using System.Threading.Tasks;
+using sisbase;
 namespace Sokobot_sharp
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var bot = new SisbaseBot();
+            bot.RegisterBot(typeof(Program).Assembly);
+            await bot.Start();
         }
     }
 }
